@@ -1079,6 +1079,28 @@ textarea {
   position: absolute;
 }
 
+.input-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #212121;
+}
+
+.input-wrapper input {
+  margin-bottom: 0;
+}
+
+.input-style:focus + .input-icon,
+.input-style:hover + .input-icon {
+  fill: var(--main-color);
+}
+
 .icon-box {
   display: inline-block;
   width: 16px;
